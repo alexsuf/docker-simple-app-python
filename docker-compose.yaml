@@ -1,0 +1,11 @@
+version: '3.1'
+
+services:
+  post:
+    image: python:alpine
+    container_name: apython
+    stdin_open: true
+    tty: true
+    volumes:
+      - c:/SQL/DOCKER/PYTHON/FILES:/app/files
+    command: "python /app/files/main.py"
